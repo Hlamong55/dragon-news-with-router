@@ -1,16 +1,86 @@
-# React + Vite
+# 📰 **Dragon News – Journalism Without Fear or Favour**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📜 **Overview**
 
-Currently, two official plugins are available:
+Dragon News is a modern, responsive web application designed to simulate a dynamic news portal. It provides users with categorized news browsing, social login options, and secure content access management through Firebase. This project emphasizes clean UI, **seamless navigation** using React Router, and **robust user authentication**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 **Live Demo & Source Code**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Type | Link |
+| :--- | :--- |
+| **Live URL** | (http://localhost:5174/category/0) |
+| **GitHub Repository** | [(https://github.com/Hlamong55/dragon-news-with-router) |
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 **Tech Stack & Dependencies**
+
+### **Core Technologies**
+| Category | Technology |
+| :--- | :--- |
+| **Frontend** | React (Vite) |
+| **Routing** | React Router DOM |
+| **Authentication** | **Firebase** (with Social Login) |
+| **Styling** | CSS / Bootstrap / Tailwind |
+
+### **Frontend Dependencies (Key Packages)**
+* `react`
+* `react-dom`
+* `react-router-dom`
+* `firebase`
+* `@heroicons/react` (Optional)
+* `localforage` (Optional)
+* `sort-by` (Optional)
+
+---
+
+## ✨ **Key Features**
+
+### 🔑 **User Authentication & Security**
+* **Firebase Integration:** Secure User Login/Registration.
+* **Social Login:** Easy integration with providers like **Google and GitHub**.
+* **Protected Routes:** Utilizing React Router to safeguard specific content (e.g., Detailed News Articles) from unauthenticated access.
+* User profile display upon successful login.
+
+### 🌐 **Content & Navigation**
+* **Dynamic News Categories:** Dedicated sidebar allows navigation between categories (e.g., Business, Technology, Sports).
+* **Total News Count:** Displayed for transparency and content overview.
+* **Seamless Routing:** Efficient navigation between Home, Category, and Detailed News pages.
+* **Fully Responsive** UI design.
+
+### ➕ **Additional Elements**
+* Placeholder sections for **LATEST** headlines and **Q-Zone**.
+* **Find Us On** section for social media links.
+
+---
+
+## ⚙️ **Installation & Setup**
+
+### ⚠️ **Prerequisites**
+* Node.js installed.
+* A **Firebase Project** configured with Authentication enabled (Google, GitHub providers).
+* Your Firebase API Key and config details.
+
+### **Steps**
+
+```bash
+# 1. Clone the project
+git clone [Your GitHub Repository URL]
+cd dragon-news-project
+
+# 2. Install dependencies
+npm install
+
+# 3. Setup Environment Variables (Critical for Firebase)
+# Create a .env file and add your Firebase configuration:
+# VITE_APP_FIREBASE_API_KEY=your_key
+# VITE_APP_FIREBASE_AUTH_DOMAIN=your_domain
+# ... other Firebase config variables ...
+
+# 4. Run development server
+npm run dev
+
+# 5. Build for production
+npm run build
